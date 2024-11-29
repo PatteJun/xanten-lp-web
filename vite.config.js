@@ -10,6 +10,7 @@ export default defineConfig({
         offsite: resolve(__dirname, 'offsite.html'),
         yogaRetreat: resolve(__dirname, 'yoga-retreat.html'),
         tagungshaus: resolve(__dirname, 'tagungshaus.html'),
+        meditationWorkshop: resolve(__dirname, 'meditation-workshop-location.html'),
       },
     },
   },
