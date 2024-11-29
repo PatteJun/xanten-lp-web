@@ -1,4 +1,4 @@
-import { landingContent } from './config/content.js';
+import { retreatContent } from './config/content.js';
 import { Navbar } from './components/Navbar/Navbar.js';
 import { Hero } from './components/Hero/Hero.js';
 import { USP } from './components/USP/USP.js';
@@ -11,24 +11,24 @@ import { FAQ } from './components/FAQ/FAQ.js';
 import { Contact } from './components/Contact/Contact.js';
 import { Footer } from './components/Footer/Footer.js';
 
-function App() {
+function RetreatApp() {
   const app = document.getElementById('app');
   app.innerHTML = `
     ${Navbar()}
     <main class="main-content">
-      ${Hero(landingContent.hero)}
-      ${USP(landingContent.usp)}
-      ${Usage(landingContent.usage)}
-      ${Details(landingContent.details)}
+      ${Hero(retreatContent.hero)}
+      ${USP(retreatContent.usp)}
+      ${Usage(retreatContent.usage)}
+      ${Details(retreatContent.details)}
       ${Gallery()}
-      ${Surroundings(landingContent.surroundings)}
+      ${Surroundings(retreatContent.surroundings)}
       ${Testimonials()}
-      ${FAQ(landingContent.faq)}
+      ${FAQ(retreatContent.faq)}
       ${Contact()}
     </main>
     ${Footer()}
   `;
 }
 
-// Initialize the app
-App();
+// Initialize the retreat app
+RetreatApp();

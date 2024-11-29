@@ -1,42 +1,9 @@
-export function Surroundings() {
-  const locations = [
-    {
-      title: 'Freizeitzentrum Xanten (FZX)',
-      description: 'Das FZX umfasst die Xantener Nord- und Südsee und bietet zahlreiche Wassersportaktivitäten wie Segeln, Windsurfen und Stand-Up-Paddling. Zudem laden Sandstrände und Liegewiesen zum Entspannen ein.',
-      distance: 'Etwa 5 km vom Haus Fürstenberg entfernt',
-      image: 'https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?auto=format&fit=crop&q=80'
-    },
-    {
-      title: 'RVR-NaturForum Bislicher Insel',
-      description: 'Ein Naturschutzgebiet mit Auenlandschaften, ideal für Spaziergänge und Vogelbeobachtungen. Hier werden auch Hatha-Yoga-Kurse angeboten, die Bewegung und Entspannung in der Natur verbinden.',
-      distance: 'Rund 8 km vom Retreat-Zentrum entfernt',
-      image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80'
-    },
-    {
-      title: 'Adventurepark Xanten',
-      description: 'Ein Hochseilgarten, der Team-Building-Aktivitäten und persönliche Herausforderungen in luftiger Höhe bietet. Ideal für Tagungsgruppen, die ein aktives Freizeitprogramm suchen.',
-      distance: 'Ungefähr 6 km vom Haus Fürstenberg entfernt',
-      image: 'https://images.unsplash.com/photo-1598520106830-8c45c2035460?auto=format&fit=crop&q=80'
-    },
-    {
-      title: 'Stadtzentrum Xanten',
-      description: 'Historische Altstadt mit dem Xantener Dom, gemütlichen Cafés und Restaurants. Ein kultureller Ausflug für Teilnehmer, um zwischen den Workshops zu entspannen.',
-      distance: 'Circa 3 km vom Retreat-Zentrum entfernt',
-      image: 'https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&q=80'
-    },
-    {
-      title: 'Archäologischer Park Xanten (APX)',
-      description: 'Deutschlands größtes archäologisches Freilichtmuseum auf dem Gelände der römischen Stadt Colonia Ulpia Traiana. Einblicke in die römische Geschichte und Kultur.',
-      distance: 'Etwa 4 km vom Haus Fürstenberg entfernt',
-      image: 'https://images.unsplash.com/photo-1606922731315-8a08b9b4ad21?auto=format&fit=crop&q=80'
-    }
-  ];
-
+export function Surroundings({ title, locations }) {
   return `
     <section class="surroundings-section">
       <div class="surroundings-container">
         <div class="surroundings-header">
-          <h2 class="surroundings-title">Die direkte Nachbarschaft</h2>
+          <h2 class="surroundings-title">${title}</h2>
         </div>
         <div class="surroundings-grid">
           ${locations.map(location => `
