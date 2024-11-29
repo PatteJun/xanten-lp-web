@@ -1,0 +1,63 @@
+/* USP Section Styles */
+.usp-section {
+  padding: 5rem 0;
+  background-color: #f8f9fa;
+}
+
+.usp-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.usp-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.usp-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.usp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.usp-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.usp-item:hover {
+  transform: translateY(-5px);
+}
+
+.usp-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1.5rem;
+  color: #007bff;
+}
+
+.usp-item-title {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.usp-item-description {
+  color: #666;
+  line-height: 1.6;
+}
