@@ -7,6 +7,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         retreat: resolve(__dirname, 'retreat.html'),
+        offsite: resolve(__dirname, 'offsite.html'),
       },
     },
   },
