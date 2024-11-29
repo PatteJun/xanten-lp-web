@@ -1,4 +1,4 @@
-import { retreatContent } from './config/content.js';
+import { retreatContent } from './config/retreat-content.js';
 import { Navbar } from './components/Navbar/Navbar.js';
 import { Hero } from './components/Hero/Hero.js';
 import { USP } from './components/USP/USP.js';
